@@ -1,0 +1,74 @@
+version: 2
+enable-beta-ecosystems: true
+
+updates:
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "daily"
+
+    - package-ecosystem: "nuget"
+      directory: "/CorApi"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/CorApi2"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/Mono.Debugger.Soft"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/Mono.Debugging.Soft"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/Mono.Debugging.Win32"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/Mono.Debugging"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/UnitTests/MonoDevelop.Debugger.Tests.AppDomainClient"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/UnitTests/MonoDevelop.Debugger.Tests.NonUserCodeTestLib"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/UnitTests/MonoDevelop.Debugger.Tests.NonUserCodeTestLibCore"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/UnitTests/MonoDevelop.Debugger.Tests.TestApp"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "nuget"
+      directory: "/UnitTests/MonoDevelop.Debugger.Tests.TestAppCore"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
